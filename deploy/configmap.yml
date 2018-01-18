@@ -127,11 +127,11 @@ data:
     max-message-size = 67108864
     
     [receiver.kafka]
-    protocol = "kafka
+    protocol = "kafka"
     # Available options: "plain" (default), "protobuf", "pickle"
     parse-protocol = "plain"
     # Kafka connection parameters
-    brokers = [ "kafka-sc:9092" ]
+    brokers = [ "kafka-hs:9092" ]
     topic = "graphite"
     partition = 0
 
