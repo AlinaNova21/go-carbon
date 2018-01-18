@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: go-carbon
+  namespace: db
+spec:
+  selector:
+    app: go-carbon
+  ports:
+  - protocol: TCP
+    port: 2003
+    targetPort: 2003
+  - protocol: TCP
+    port: 80
+    targetPort: 2007
