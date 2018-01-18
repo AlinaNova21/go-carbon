@@ -20,6 +20,7 @@ spec:
       containers:
       - image: quay.io/ags131/go-carbon
         name: go-carbon
+        command: ['sleep','5d']
         volumeMounts:
         - name: go-carbon-volume
           mountPath: /data
